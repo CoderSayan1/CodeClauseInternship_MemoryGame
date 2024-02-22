@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+    height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #f1f2b5, #135058);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-title {
+  background: #ec008c;
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  color: white;
+  margin-top: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.title {
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
+#panel {
+  height: 80%;
+  width: 80%;
+  margin-top: 30px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+  box-shadow: 4.8px 9.6px 9.6px hsl(0deg 0% 0% / 0.35);
+}
+
+#ptop {
+  height: 100px;
+  width: 100%;
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20%;
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  background-color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#pbottom {
+  height: calc(100% - 100px);
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #8e9eab;
+  background: -webkit-linear-gradient(to right, #eef2f3, #86b8e1);
+  background: linear-gradient(to right, #eef2f3, #86b8e1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 120px;
+  width: 60px;
+  border-radius: 10px;
+  background: #f09819; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #edde5d,
+    #f09819
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #edde5d,
+    #f09819
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+.bubble:hover {
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  cursor: pointer;
+}
+
+#btn {
+  margin: 20px;
+  padding: 1rem 1.25rem;
+  font-size: 22px;
+  font-weight: 550;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  color: black;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 4.8px 9.6px 9.6px hsl(0deg 0% 0% / 0.35);
+}
+#btn:hover {
+  background: #b3ffab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #12fff7,
+    #b3ffab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #12fff7,
+    #b3ffab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 786px) {
+  #ptop {
+    padding: 0 10%;
+  }
+  
+}
+@media only screen and (max-width: 618px) {
+  #ptop {
+    padding: 0 5%;
+  }
+  .elem {
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 521px) {
+  .box {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .elem {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .bubble {
+    background-color: lightblue;
+    height: 80px;
+    width: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  #pbottom {
+    gap: 5px;
+    padding: 5px;
+  }
+  .title{
+    padding: 5px 10px;
+    font-size: 24px;
+  }
+  
+}
