@@ -24,4 +24,4 @@ To run the Memory Game project locally, follow these steps:
 3. Open `index.html` in your preferred web browser.
 
 ## Live demo
-https://codersayan1.github.io/CodeClauseInternship_MemoryGame/
+Take a look: https://codersayan1.github.io/CodeClauseInternship_MemoryGame/
