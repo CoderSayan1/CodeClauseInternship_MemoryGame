@@ -5,9 +5,8 @@ let hitrn = 0;
 function makeBubble() {
   let clutter = "";
   let numBubbles;
-  console.log(window.innerWidth);
   if (window.innerWidth < 650) {
-    numBubbles = 30; // reduce the number of bubbles for smaller devices
+    numBubbles = 30;
   } else{
     numBubbles = 50;
   }
@@ -59,7 +58,7 @@ document.querySelector("#pbottom").addEventListener("click", function(dets){
 
 document.querySelector("#btn").addEventListener("click", function(){
     if(timer == 0){
-        timer = 60;
+        timer = 30;
         score = 0;
         makeBubble();
         runTimer();
@@ -67,6 +66,8 @@ document.querySelector("#btn").addEventListener("click", function(){
     }
 })
 
-makeBubble();
-runTimer();
-getHit();
+document.querySelector("#play").addEventListener("click", function(){
+    makeBubble();
+    runTimer();
+    getHit();
+})
